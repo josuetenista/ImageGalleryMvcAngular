@@ -13,7 +13,7 @@ namespace Test.Test.Images
     {
         Task<bool> SaveImage(ImageInputDto input);
         Task<ListResultDto<ImageOutputDto>> ListAllUserImages();
-        Task<bool> DeleteImage(ImageInputDto input);
+        Task<bool> DeleteImage(ImageOutputDto input);
         Task<bool> EditImage(ImageInputDto input);
         Task<ImageOutputDto> GetImage(int id);
 

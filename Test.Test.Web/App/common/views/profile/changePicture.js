@@ -1,13 +1,17 @@
 ﻿(function () {
     appModule.controller('common.views.profile.changePicture', [
-        '$scope', 'appSession', '$uibModalInstance', 'FileUploader', 'abp.services.app.image',
-        function ($scope, appSession, $uibModalInstance, fileUploader, imageService) {
+        '$scope', 'appSession', '$uibModalInstance', 'FileUploader', 'abp.services.app.image', 'imageId',
+        function ($scope, appSession, $uibModalInstance, fileUploader, imageService, imageId) {
             var vm = this;
 
             var $jcropImage = null;
             vm.uploadedFileName = null;
             vm.extension = null;
-
+            if (imageId === null) {
+                vm.imageId = 0;
+            } else {
+                vm.imageId = imageId;
+            }
             vm.uploader = new fileUploader({
                 url: abp.appPath + 'Image/UploadImage',
                 headers: {
@@ -53,6 +57,7 @@
                     x: parseInt(resizeParams.x),
                     y: parseInt(resizeParams.y),
                     fileExtension: vm.extension,
+                    imageId : vm.imageId,
                     width: parseInt(resizeParams.w),
                     height: parseInt(resizeParams.h)
                 }).then(function () {

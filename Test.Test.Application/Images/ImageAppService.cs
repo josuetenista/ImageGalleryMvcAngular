@@ -23,7 +23,7 @@ namespace Test.Test.Images
         private readonly IAppFolders _appFolders;
 
 
-        public ImageAppService(IRepository<Image> imageRepository, IAppFolders appFolders,IBinaryObjectManager binaryObjectManager)
+        public ImageAppService(IRepository<Image> imageRepository, IAppFolders appFolders, IBinaryObjectManager binaryObjectManager)
         {
 
             _appFolders = appFolders;
@@ -69,8 +69,9 @@ namespace Test.Test.Images
                 FileHelper.DeleteIfExists(tempProfilePicturePath);
 
 
-
-                _imageRepository.InsertAndGetId(new Image()
+                //if (input.ImageId == 0)
+                //{
+                _imageRepository.InsertOrUpdateAndGetId(new Image()
                 {
                     FileLocation = tempProfilePicturePath,
                     FileFormat = input.FileExtension,
@@ -78,9 +79,13 @@ namespace Test.Test.Images
                     ImageByte = byteArray,
                     ImageString = Convert.ToBase64String(byteArray),
                     UserId = user.Id,
+                    Id = input.ImageId
 
                 });
                 return true;
+                //}
+
+
             }
             catch (Exception e)
             {
@@ -95,9 +100,17 @@ namespace Test.Test.Images
             return new ListResultDto<ImageOutputDto>(userImages.MapTo<List<ImageOutputDto>>());
         }
 
-        public async Task<bool> DeleteImage(ImageInputDto input)
+        public async Task<bool> DeleteImage(ImageOutputDto input)
         {
-            throw new NotImplementedException();
+            try
+            {
+                await _imageRepository.DeleteAsync(input.Id);
+                return true;
+            }
+            catch (Exception e)
+            {
+                throw new UserFriendlyException(e.Message,e);
+            }
         }
 
         public async Task<bool> EditImage(ImageInputDto input)

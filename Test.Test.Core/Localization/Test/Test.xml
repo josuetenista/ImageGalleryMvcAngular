@@ -50,6 +50,7 @@
     <text name="SuccessfullyDeleted" value="Successfully deleted." />
     <text name="RoleDeleteWarningMessage" value="Role {0} will be deleted and unassigned from all assigned users." />
     <text name="UserDeleteWarningMessage" value="User {0} will be deleted." />
+    <text name="ImageDeleteWarningMessage" value="Image {0} will be deleted." />
     <text name="Active" value="Active" />
     <text name="EmailConfirm" value="Email confirm" />
     <text name="Yes" value="Yes" />

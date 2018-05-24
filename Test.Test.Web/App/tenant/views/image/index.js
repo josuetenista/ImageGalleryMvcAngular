@@ -34,7 +34,8 @@
                             '    <button class="btn btn-xs btn-primary blue" uib-dropdown-toggle="" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog"></i> ' + app.localize('Actions') + ' <span class="caret"></span></button>' +
                             '    <ul uib-dropdown-menu>' +
                             '      <li><a ng-click="grid.appScope.editimage(row.entity)">' + app.localize('Edit') + '</a></li>' +
-                            '      <li><a ng-click="grid.appScope.deleteImage(row.entity)">' + app.localize('Delete') + '</a></li>' +
+                            '      <li><a ng-click="grid.appScope.deleteimage(row.entity)">' + app.localize('Delete') + '</a></li>' +
+                            '      <li><a ng-click="grid.appScope.deleteimage(row.entity)">' + app.localize('Delete') + '</a></li>' +
                             '    </ul>' +
                             '  </div>' +
                             '</div>'
@@ -49,7 +50,7 @@
                         field: 'imageString',
                         cellTemplate:
                             '<div class=\"ui-grid-cell-contents\">' +
-                            '<img data-ng-src="data:image/png;base64,{{row.entity.imageString}}" data-err-src="images/png/avatar.png"/>'+
+                            '<img data-ng-src="data:image/png;base64,{{row.entity.imageString}}" data-err-src="images/png/avatar.png"/>' +
                             '</div>',
                         width: 300
                     },
@@ -64,7 +65,7 @@
             };
 
             if (!vm.permissions.edit &&
-                !vm.permissions.changeTexts && 
+                !vm.permissions.changeTexts &&
                 !vm.permissions.delete) {
                 vm.gridOptions.columnDefs.shift();
             }
@@ -89,15 +90,20 @@
 
             vm.deleteimage = function (image) {
                 abp.message.confirm(
-                    app.localize('imageDeleteWarningMessage', image.displayName),
+                    app.localize('ImageDeleteWarningMessage', image.fileName),
                     function (isConfirmed) {
                         if (isConfirmed) {
-                            imageService.deleteimage({
-                                id: image.id
-                            }).then(function () {
-                                vm.getimages();
-                                abp.notify.success(app.localize('SuccessfullyDeleted'));
-                            });
+                            imageService.deleteImage(image)
+                                .then(function () {
+                                    vm.getimages();
+                                    abp.notify.success(app.localize('SuccessfullyDeleted'));
+
+                                }).finally(function () {
+                                    vm.getimages();
+                                    abp.notify.success(app.localize('SuccessfullyDeleted'));
+
+
+                                });
                         }
                     }
                 );
