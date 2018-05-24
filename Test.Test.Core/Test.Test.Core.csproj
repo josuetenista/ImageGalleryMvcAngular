@@ -202,6 +202,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Images\Image.cs" />
     <Compile Include="TestConsts.cs" />
     <Compile Include="TestCoreModule.cs" />
     <Compile Include="TestDomainServiceBase.cs" />

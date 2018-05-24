@@ -148,9 +148,13 @@
     <text name="ChangeProfilePicture" value="Change profile picture" />
     <text name="TenantName_Regex_Description" value="Tenant name must be at least 2 chars, starts with a letter and continue with letter, number, dash or underscore." />
     <text name="ProfilePicture_Change_Info" value="You can select a JPG/JPEG/PNG file with a maximum 1MB size." />
+    <text name="Image_Change_Info" value="You can select a JPG/JPEG/PNG file with a maximum 100MB size." />
     <text name="ProfilePicture_Change_Error" value="Your profile picture could not be changed." />
+    <text name="Image_Change_Info_Change_Error" value="Your Image could not be uploaded." />
     <text name="ProfilePicture_Warn_SizeLimit" value="Picture size must be smalled than 1MB. Please select another file." />
+    <text name="Image_Change_Info_Warn_SizeLimit" value="Picture size must be smalled than 100MB. Please select another file." />
     <text name="ProfilePicture_Warn_FileType" value="You can only select JPG/JPEG/GIF/PNG file. Please select another file." />
+    <text name="Image_Change_Info_Warn_FileType" value="You can only select JPG/JPEG/GIF/PNG file. Please select another file." />
     <text name="Dashboard" value="Dashboard" />
     <text name="DashboardHeaderInfo" value="statistics and reports" />
     <text name="GoToApplication" value="Go to application" />
@@ -195,6 +199,7 @@
     <text name="IpAddress" value="IP address" />
     <text name="Client" value="Client" />
     <text name="Browser" value="Browser" />
+    <text name="Images" value="Images" />
     <text name="Xms" value="{0} ms" />
     <text name="Close" value="Close" />
     <text name="Refresh" value="Refresh" />
@@ -212,7 +217,9 @@
     <text name="Last7Days" value="Last 7 days" />
     <text name="Last30Days" value="Last 30 days" />
     <text name="ThisMonth" value="This month" />
+    <text name="ImagesHeaderInfo" value="Create or edit user images." />
     <text name="LastMonth" value="Last month" />
+    <text name="CreateNewImage" value="Create new image" />
     <text name="TenantSelection" value="Tenant Selection" />
     <text name="TenantSelection_Detail" value="Please select one of the following tenants." />
     <text name="LoginWith" value="Login with:" />

@@ -38,6 +38,13 @@ namespace Test.Test.Web.App.Startup
                     requiredPermissionName: AppPermissions.Pages_Tenant_Dashboard
                     )
                 ).AddItem(new MenuItemDefinition(
+                        PageNames.App.Tenant.Dashboard,
+                        L("Dashboard"),
+                        url: "tenant.dashboard",
+                        icon: "icon-home",
+                        requiredPermissionName: AppPermissions.Pages_Tenant_Dashboard
+                    )
+                ).AddItem(new MenuItemDefinition(
                     PageNames.App.Common.Administration,
                     L("Administration"),
                     icon: "icon-wrench"

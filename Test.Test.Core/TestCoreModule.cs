@@ -65,7 +65,7 @@ namespace Test.Test
             Configuration.Notifications.Providers.Add<AppNotificationProvider>();
 
             //Enable this line to create a multi-tenant application.
-            Configuration.MultiTenancy.IsEnabled = TestConsts.MultiTenancyEnabled;
+            Configuration.MultiTenancy.IsEnabled = false;
 
             //Enable LDAP authentication (It can be enabled only if MultiTenancy is disabled!)
             //Configuration.Modules.ZeroLdap().Enable(typeof(AppLdapAuthenticationSource));

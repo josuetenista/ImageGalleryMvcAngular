@@ -1,7 +1,10 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 using Abp.Authorization.Users;
 using Abp.Extensions;
 using Microsoft.AspNet.Identity;
+using Test.Test.Images;
 
 namespace Test.Test.Authorization.Users
 {
@@ -17,6 +20,7 @@ namespace Test.Test.Authorization.Users
         public virtual Guid? ProfilePictureId { get; set; }
 
         public virtual bool ShouldChangePasswordOnNextLogin { get; set; }
+        public virtual ICollection<Image> Images { get; set; }
 
         //Can add application specific user properties here
 

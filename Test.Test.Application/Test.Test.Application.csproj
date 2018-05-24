@@ -215,6 +215,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Images\Dto\ImageInputDto.cs" />
+    <Compile Include="Images\Dto\ImageOutputDto.cs" />
+    <Compile Include="Images\IImageAppService.cs" />
+    <Compile Include="Images\ImageAppService.cs" />
     <Compile Include="TestApplicationModule.cs" />
     <Compile Include="TestAppServiceBase.cs" />
     <Compile Include="AppConsts.cs" />

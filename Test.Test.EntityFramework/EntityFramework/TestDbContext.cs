@@ -5,6 +5,7 @@ using Test.Test.Authorization.Roles;
 using Test.Test.Authorization.Users;
 using Test.Test.Chat;
 using Test.Test.Friendships;
+using Test.Test.Images;
 using Test.Test.MultiTenancy;
 using Test.Test.Storage;
 
@@ -27,6 +28,7 @@ namespace Test.Test.EntityFramework
         public virtual IDbSet<Friendship> Friendships { get; set; }
 
         public virtual IDbSet<ChatMessage> ChatMessages { get; set; }
+        public virtual IDbSet<Image> Images { get; set; }
 
         public TestDbContext()
             : base("Default")
