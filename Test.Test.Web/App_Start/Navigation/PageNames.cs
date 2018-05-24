@@ -25,6 +25,7 @@ namespace Test.Test.Web.Navigation
             public static class Tenant
             {
                 public const string Dashboard = "Dashboard.Tenant";
+                public const string Image = "Dashboard.Image";
                 public const string Settings = "Administration.Settings.Tenant";
             }
         }

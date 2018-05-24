@@ -14,7 +14,7 @@ namespace Test.Test.Images
     public class Image : FullAuditedEntity
     {
         public const int MaxImageNameLength = 32;
-        public const int MaxImageFileLocationLength = 32;
+        public const int MaxImageFileLocationLength = 256;
         public const int MaxImageFormatLength = 6;
 
         [Required]
@@ -25,6 +25,7 @@ namespace Test.Test.Images
         [MaxLength(MaxImageFormatLength)]
         public virtual string FileFormat { get; set; }
         public virtual byte[] ImageByte { get; set; }
+        public virtual string ImageString { get; set; }
         //Not required since it can be saved only in DB
         [MaxLength(MaxImageFileLocationLength)]
         public virtual string FileLocation { get; set; }

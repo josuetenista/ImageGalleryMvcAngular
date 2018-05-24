@@ -31,9 +31,9 @@ namespace Test.Test.Web.App.Startup
                     requiredPermissionName: AppPermissions.Pages_Editions
                     )
                 ).AddItem(new MenuItemDefinition(
-                    PageNames.App.Tenant.Dashboard,
-                    L("Dashboard"),
-                    url: "tenant.dashboard",
+                    PageNames.App.Tenant.Image,
+                    L("Images"),
+                    url: "tenant.image",
                     icon: "icon-home",
                     requiredPermissionName: AppPermissions.Pages_Tenant_Dashboard
                     )

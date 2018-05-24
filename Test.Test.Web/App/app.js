@@ -168,6 +168,13 @@ appModule.config([
                 templateUrl: '~/App/tenant/views/dashboard/index.cshtml'
             });
         }
+        if (abp.auth.hasPermission('Pages.Tenant.Dashboard')) {
+            $urlRouterProvider.otherwise("/tenant/image");
+            $stateProvider.state('tenant.image', {
+                url: '/image',
+                templateUrl: '~/App/tenant/views/image/index.cshtml'
+            });
+        }
 
         if (abp.auth.hasPermission('Pages.Administration.Tenant.Settings')) {
             $stateProvider.state('tenant.settings', {

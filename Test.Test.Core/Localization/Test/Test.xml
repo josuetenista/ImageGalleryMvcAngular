@@ -40,6 +40,7 @@
     <text name="CreateNewUser" value="Create new user" />
     <text name="UserName" value="User name" />
     <text name="Name" value="Name" />
+    <text name="FileName" value="File Name" />
     <text name="Surname" value="Surname" />
     <text name="EmailAddress" value="Email address" />
     <text name="LastLoginTime" value="Last login time" />
@@ -146,6 +147,7 @@
     <text name="TenantNameCanNotBeEmpty" value="Tenant name can not be empty" />
     <text name="ExportToExcel" value="Export to excel" />
     <text name="ChangeProfilePicture" value="Change profile picture" />
+    <text name="UploadImage" value="Upload Image" />
     <text name="TenantName_Regex_Description" value="Tenant name must be at least 2 chars, starts with a letter and continue with letter, number, dash or underscore." />
     <text name="ProfilePicture_Change_Info" value="You can select a JPG/JPEG/PNG file with a maximum 1MB size." />
     <text name="Image_Change_Info" value="You can select a JPG/JPEG/PNG file with a maximum 100MB size." />

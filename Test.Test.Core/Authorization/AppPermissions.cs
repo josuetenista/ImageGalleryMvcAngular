@@ -41,7 +41,7 @@
         //TENANT-SPECIFIC PERMISSIONS
 
         public const string Pages_Tenant_Dashboard = "Pages.Tenant.Dashboard";
-
+        public const string Pages_Tenant_Image = "Pages.Tenant.Image";
         public const string Pages_Administration_Tenant_Settings = "Pages.Administration.Tenant.Settings";
         
         //HOST-SPECIFIC PERMISSIONS

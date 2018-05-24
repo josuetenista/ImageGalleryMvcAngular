@@ -12,9 +12,10 @@ namespace Test.Test.Images.Dto
     {
         public string FileName { get; set; }
         public string FileFormat { get; set; }
-        public byte[] ImageByte { get; set; }
+        //public byte[] ImageByte { get; set; }
         //Not required since it can be saved only in DB
         public string FileLocation { get; set; }
+        public string ImageString { get; set; }
         public long UserId { get; set; }
     }
 }

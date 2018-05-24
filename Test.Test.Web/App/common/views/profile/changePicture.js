@@ -1,14 +1,15 @@
 ﻿(function () {
     appModule.controller('common.views.profile.changePicture', [
-        '$scope', 'appSession', '$uibModalInstance', 'FileUploader', 'abp.services.app.profile',
-        function ($scope, appSession, $uibModalInstance, fileUploader, profileService) {
+        '$scope', 'appSession', '$uibModalInstance', 'FileUploader', 'abp.services.app.image',
+        function ($scope, appSession, $uibModalInstance, fileUploader, imageService) {
             var vm = this;
 
             var $jcropImage = null;
             vm.uploadedFileName = null;
+            vm.extension = null;
 
             vm.uploader = new fileUploader({
-                url: abp.appPath + 'Profile/UploadProfilePicture',
+                url: abp.appPath + 'Image/UploadImage',
                 headers: {
                     "X-XSRF-TOKEN": abp.security.antiForgery.getToken()
                 },
@@ -26,7 +27,7 @@
                         }
 
                         //File size check
-                        if (item.size > 1048576) //1MB
+                        if (item.size > 100048576) //100MB
                         {
                             abp.message.warn(app.localize('ProfilePicture_Warn_SizeLimit'));
                             return false;
@@ -47,10 +48,11 @@
                     resizeParams = $jcropImage.data("Jcrop").tellSelect();
                 }
 
-                profileService.updateProfilePicture({
+                imageService.saveImage({
                     fileName: vm.uploadedFileName,
                     x: parseInt(resizeParams.x),
                     y: parseInt(resizeParams.y),
+                    fileExtension: vm.extension,
                     width: parseInt(resizeParams.w),
                     height: parseInt(resizeParams.h)
                 }).then(function () {
@@ -75,6 +77,7 @@
 
                     var profileFilePath = abp.appPath + 'Temp/Downloads/' + response.result.fileName + '?v=' + new Date().valueOf();
                     vm.uploadedFileName = response.result.fileName;
+                    vm.extension = response.result.fileFormat;
 
                     if ($jcropImage) {
                         $jcropImage.data('Jcrop').destroy();

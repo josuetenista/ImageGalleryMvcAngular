@@ -485,6 +485,14 @@
     <Compile Include="Migrations\201805240019495_UserImages.Designer.cs">
       <DependentUpon>201805240019495_UserImages.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201805240119398_FileLocationMaxLength256.cs" />
+    <Compile Include="Migrations\201805240119398_FileLocationMaxLength256.Designer.cs">
+      <DependentUpon>201805240119398_FileLocationMaxLength256.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805240152180_ImageBase64String.cs" />
+    <Compile Include="Migrations\201805240152180_ImageBase64String.Designer.cs">
+      <DependentUpon>201805240152180_ImageBase64String.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="TestDataModule.cs" />
     <Compile Include="Migrations\Seed\Host\DefaultEditionCreator.cs" />
@@ -701,6 +709,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201805240019495_UserImages.resx">
       <DependentUpon>201805240019495_UserImages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805240119398_FileLocationMaxLength256.resx">
+      <DependentUpon>201805240119398_FileLocationMaxLength256.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805240152180_ImageBase64String.resx">
+      <DependentUpon>201805240152180_ImageBase64String.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
