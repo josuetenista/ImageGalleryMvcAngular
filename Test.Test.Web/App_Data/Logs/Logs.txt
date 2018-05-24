@@ -2791,3 +2791,36 @@ DEBUG 2018-05-23 22:20:02,107 [59   ] Abp.Web.SignalR.Hubs.AbpCommonHub        -
 DEBUG 2018-05-23 22:20:16,886 [13   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is disconnected: c0c780db-09ee-4f39-b4b6-9dc51aafdd25
 DEBUG 2018-05-23 22:20:19,460 [68   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is connected: {"ConnectionId":"4537ca17-c134-496e-82f1-e2d7e1813618","IpAddress":"192.168.2.19","TenantId":1,"UserId":2,"ConnectTime":"2018-05-24T02:20:19.4536605Z","Properties":{}}
 DEBUG 2018-05-23 22:20:19,467 [31   ] Abp.Web.SignalR.Hubs.AbpCommonHub        - A client is registered: 4537ca17-c134-496e-82f1-e2d7e1813618
+DEBUG 2018-05-23 22:22:15,571 [30   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-05-23 22:22:15,572 [30   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-05-23 22:22:15,572 [30   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-05-23 22:22:15,572 [30   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2018-05-23 22:22:24,163 [32   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-05-23 22:22:24,178 [32   ] Abp.Modules.AbpModuleManager             - Found 21 ABP modules in total.
+DEBUG 2018-05-23 22:22:24,189 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: Test.Test.Web.TestWebModule, Test.Test.Web, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-05-23 22:22:24,191 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-05-23 22:22:24,191 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-05-23 22:22:24,192 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-05-23 22:22:24,192 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-05-23 22:22:24,192 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpZeroOwinModule, Abp.Zero.Owin, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-05-23 22:22:24,192 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-05-23 22:22:24,193 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-05-23 22:22:24,193 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: Test.Test.TestDataModule, Test.Test.EntityFramework, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-05-23 22:22:24,193 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-05-23 22:22:24,193 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-05-23 22:22:24,193 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-05-23 22:22:24,194 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: Test.Test.TestCoreModule, Test.Test.Core, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-05-23 22:22:24,194 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.Ldap.AbpZeroLdapModule, Abp.Zero.Ldap, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-05-23 22:22:24,194 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-05-23 22:22:24,194 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: Test.Test.TestApplicationModule, Test.Test.Application, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-05-23 22:22:24,194 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: Test.Test.WebApi.TestWebApiModule, Test.Test.WebApi, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-05-23 22:22:24,194 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-05-23 22:22:24,194 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-05-23 22:22:24,195 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Runtime.Caching.Redis.AbpRedisCacheModule, Abp.RedisCache, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-05-23 22:22:24,195 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Hangfire.AbpHangfireModule, Abp.HangFire, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-05-23 22:22:24,198 [32   ] Abp.Modules.AbpModuleManager             - 21 modules loaded.
+DEBUG 2018-05-23 22:22:24,460 [32   ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-05-23 22:22:24,460 [32   ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-05-23 22:22:24,460 [32   ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-05-23 22:22:24,460 [32   ] o.Configuration.LanguageManagementConfig - Converted Test (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-05-23 22:22:24,896 [32   ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: Test.Test.EntityFramework.TestDbContext, Test.Test.EntityFramework, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null

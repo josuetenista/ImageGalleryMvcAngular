@@ -37,75 +37,76 @@ namespace Test.Test.Web.App.Startup
                     icon: "icon-home",
                     requiredPermissionName: AppPermissions.Pages_Tenant_Dashboard
                     )
-                ).AddItem(new MenuItemDefinition(
-                        PageNames.App.Tenant.Dashboard,
-                        L("Dashboard"),
-                        url: "tenant.dashboard",
-                        icon: "icon-home",
-                        requiredPermissionName: AppPermissions.Pages_Tenant_Dashboard
-                    )
-                ).AddItem(new MenuItemDefinition(
-                    PageNames.App.Common.Administration,
-                    L("Administration"),
-                    icon: "icon-wrench"
-                    ).AddItem(new MenuItemDefinition(
-                        PageNames.App.Common.OrganizationUnits,
-                        L("OrganizationUnits"),
-                        url: "organizationUnits",
-                        icon: "icon-layers",
-                        requiredPermissionName: AppPermissions.Pages_Administration_OrganizationUnits
-                        )
-                    ).AddItem(new MenuItemDefinition(
-                        PageNames.App.Common.Roles,
-                        L("Roles"),
-                        url: "roles",
-                        icon: "icon-briefcase",
-                        requiredPermissionName: AppPermissions.Pages_Administration_Roles
-                        )
-                    ).AddItem(new MenuItemDefinition(
-                        PageNames.App.Common.Users,
-                        L("Users"),
-                        url: "users",
-                        icon: "icon-users",
-                        requiredPermissionName: AppPermissions.Pages_Administration_Users
-                        )
-                    ).AddItem(new MenuItemDefinition(
-                        PageNames.App.Common.Languages,
-                        L("Languages"),
-                        url: "languages",
-                        icon: "icon-flag",
-                        requiredPermissionName: AppPermissions.Pages_Administration_Languages
-                        )
-                    ).AddItem(new MenuItemDefinition(
-                        PageNames.App.Common.AuditLogs,
-                        L("AuditLogs"),
-                        url: "auditLogs",
-                        icon: "icon-lock",
-                        requiredPermissionName: AppPermissions.Pages_Administration_AuditLogs
-                        )
-                    ).AddItem(new MenuItemDefinition(
-                        PageNames.App.Host.Maintenance,
-                        L("Maintenance"),
-                        url: "host.maintenance",
-                        icon: "icon-wrench",
-                        requiredPermissionName: AppPermissions.Pages_Administration_Host_Maintenance
-                        )
-                    )
-                    .AddItem(new MenuItemDefinition(
-                        PageNames.App.Host.Settings,
-                        L("Settings"),
-                        url: "host.settings",
-                        icon: "icon-settings",
-                        requiredPermissionName: AppPermissions.Pages_Administration_Host_Settings
-                        )
-                    ).AddItem(new MenuItemDefinition(
-                        PageNames.App.Tenant.Settings,
-                        L("Settings"),
-                        url: "tenant.settings",
-                        icon: "icon-settings",
-                        requiredPermissionName: AppPermissions.Pages_Administration_Tenant_Settings
-                        )
-                    )
+                //)
+                //.AddItem(new MenuItemDefinition(
+                //        PageNames.App.Tenant.Dashboard,
+                //        L("Dashboard"),
+                //        url: "tenant.dashboard",
+                //        icon: "icon-home",
+                //        requiredPermissionName: AppPermissions.Pages_Tenant_Dashboard
+                //    )
+                //).AddItem(new MenuItemDefinition(
+                //    PageNames.App.Common.Administration,
+                //    L("Administration"),
+                //    icon: "icon-wrench"
+                //    ).AddItem(new MenuItemDefinition(
+                //        PageNames.App.Common.OrganizationUnits,
+                //        L("OrganizationUnits"),
+                //        url: "organizationUnits",
+                //        icon: "icon-layers",
+                //        requiredPermissionName: AppPermissions.Pages_Administration_OrganizationUnits
+                //        )
+                //    ).AddItem(new MenuItemDefinition(
+                //        PageNames.App.Common.Roles,
+                //        L("Roles"),
+                //        url: "roles",
+                //        icon: "icon-briefcase",
+                //        requiredPermissionName: AppPermissions.Pages_Administration_Roles
+                //        )
+                //    ).AddItem(new MenuItemDefinition(
+                //        PageNames.App.Common.Users,
+                //        L("Users"),
+                //        url: "users",
+                //        icon: "icon-users",
+                //        requiredPermissionName: AppPermissions.Pages_Administration_Users
+                //        )
+                //    ).AddItem(new MenuItemDefinition(
+                //        PageNames.App.Common.Languages,
+                //        L("Languages"),
+                //        url: "languages",
+                //        icon: "icon-flag",
+                //        requiredPermissionName: AppPermissions.Pages_Administration_Languages
+                //        )
+                //    ).AddItem(new MenuItemDefinition(
+                //        PageNames.App.Common.AuditLogs,
+                //        L("AuditLogs"),
+                //        url: "auditLogs",
+                //        icon: "icon-lock",
+                //        requiredPermissionName: AppPermissions.Pages_Administration_AuditLogs
+                //        )
+                //    ).AddItem(new MenuItemDefinition(
+                //        PageNames.App.Host.Maintenance,
+                //        L("Maintenance"),
+                //        url: "host.maintenance",
+                //        icon: "icon-wrench",
+                //        requiredPermissionName: AppPermissions.Pages_Administration_Host_Maintenance
+                //        )
+                //    )
+                //    .AddItem(new MenuItemDefinition(
+                //        PageNames.App.Host.Settings,
+                //        L("Settings"),
+                //        url: "host.settings",
+                //        icon: "icon-settings",
+                //        requiredPermissionName: AppPermissions.Pages_Administration_Host_Settings
+                //        )
+                //    ).AddItem(new MenuItemDefinition(
+                //        PageNames.App.Tenant.Settings,
+                //        L("Settings"),
+                //        url: "tenant.settings",
+                //        icon: "icon-settings",
+                //        requiredPermissionName: AppPermissions.Pages_Administration_Tenant_Settings
+                //        )
+                //    )
                 );
         }
 
